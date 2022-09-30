@@ -126,3 +126,29 @@ h1{
         transform: scale(1.5);
     }
 }
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: linear-gradient(transparent, #00aeff, #a68eff) #000;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #000;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent, #00aeff, #a68eff, transparent);
+    border-radius: 10px;
+    /*border: 3px solid #ffffff;*/
+  }
+
+  *::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, transparent, #fff78e, #ff0000, transparent);
+  }
